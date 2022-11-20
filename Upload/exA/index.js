@@ -1,6 +1,6 @@
 'use strict';
 
-const fastify = require('fastify')();
+const fastify = require('fastify')({logger: true})
 const fs = require('fs');
 const util = require('util');
 const path = require('path');
@@ -15,6 +15,7 @@ fastify.get('/', function (req, reply) {
 });
 fastify.post('/upload/files', async function (req, reply) {
   const parts = req.files();
+  fastify.log.info(parts)
   const expandCommand =
     os.platform() === 'win32'
       ? `powershell -command "& {&'Expand-Archive' ${parts} -DestinationPath ../}}"`
