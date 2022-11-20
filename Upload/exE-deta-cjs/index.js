@@ -58,13 +58,15 @@ app.get("/photo/:id", async (req) => {
   return drive.get(id);
 });
 
-const run = async () => {
-  try {
-    await app.listen({ port: 3399 });
-  } catch (err) {
-    app.log.error(err);
-    process.exit(1);
-  }
-};
+// const run = async () => {
+//   try {
+//     await app.listen({ port: 3399 });
+//   } catch (err) {
+//     app.log.error(err);
+//     process.exit(1);
+//   }
+// };
 
-run();
+// run();
+
+module.exports = app
