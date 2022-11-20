@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fastify": "^4.10.0",
+    "fastify-file-upload": "^4.0.0"
+  }
+}
