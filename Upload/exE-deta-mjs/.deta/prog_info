@@ -1,0 +1,1 @@
+{"id":"3c89c508-f5a7-42bd-9018-81de7b0f9944","space":36260,"runtime":"nodejs14.x","name":"ex-upload","path":"6mwevr","project":"b0uhjqga","account":"144798365827","region":"us-west-1","deps":["@fastify/cors@^8.0.0","deta@^1.1.0","dotenv@^16.0.1","fastify@^4.2.1","fastify-file-upload@^4.0.0"],"envs":null,"public":true,"log_level":"debug","cron":""}
