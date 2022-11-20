@@ -1,10 +1,10 @@
-import fastify from "fastify";
-import fileUpload from "fastify-file-upload";
-import cors from "@fastify/cors";
+const fastify = require("fastify")
+const fileUpload = require("fastify-file-upload")
+const cors = require("@fastify/cors")
 
-import { Deta } from "deta";
+const { Deta } = require("deta")
 
-import "dotenv/config";
+require("dotenv").config()
 
 const app = fastify();
 const deta = Deta(process.env.DETA);
